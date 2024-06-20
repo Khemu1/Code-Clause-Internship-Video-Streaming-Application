@@ -67,10 +67,6 @@ To deploy the application, make sure to set up your environment variables and ch
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/video-streaming-app/issues) to contribute.
 
-## License
-
-This project is [MIT](LICENSE) licensed.
-
 ## Acknowledgements
 
 - [Plyr.js](https://plyr.io/)
