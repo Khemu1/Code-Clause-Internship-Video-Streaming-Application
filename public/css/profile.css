@@ -119,7 +119,7 @@ section h2 {
   height: 100%;
   border-radius: 10px;
 }
-#player {
+.player {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -129,6 +129,7 @@ section h2 {
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
+  text-wrap: nowrap;
   font-size: 1.2em;
   margin-top: 5px;
 }

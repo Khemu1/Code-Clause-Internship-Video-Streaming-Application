@@ -87,7 +87,7 @@ function getVideoData() {
         } else {
           thumbnailHTML = `
           <div class="video-div">
-          <video id="player">
+          <video class="player">
             <source src="http://localhost:5173/public/assets/videos/${video.path}"  type="video/mp4" />
             </video>
           </div>
