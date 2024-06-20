@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/assets/images/favicon-32x32.png"
+    />
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/api/pages/home" class="title">FlixVid</a>
+      <div class="icon">
+        <p class="name"></p>
+        <img src="../assets/images/icons8-user-40.png" alt="User Icon" />
+        <div class="menu hide">
+          <a href="/api/pages/home" class="home">Home</a>
+          <a href="/api/pages/upload" class="upload">Upload Videos</a>
+          <a href="/api/logout" class="logout">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <h2>Your Videos</h2>
+      <div class="videos"></div>
+    </section>
+  </body>
+</html>
+<script type="module" src="../../src/Js/yourChannel.js"></script>

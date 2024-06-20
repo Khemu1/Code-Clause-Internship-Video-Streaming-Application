@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/assets/images/favicon-32x32.png"
+    />
+    <link type="text/css" rel="stylesheet" href="../css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <script>
+      0;
+    </script>
+    <div class="container">
+      <form class="login" method="POST">
+        <h2>Login</h2>
+        <div class="email">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            value="alghost900020@gmail.com"
+          />
+          <small class="error email-error emailError hide"></small>
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            value="Kh9513572680"
+          />
+          <small class="error password-error passwordError hide"></small>
+        </div>
+        <small class="main-error mainError hide"></small>
+        <button type="submit">Login</button>
+        <small><a href="/api/pages/register">Don't have an account ?</a></small>
+      </form>
+    </div>
+  </body>
+</html>
+<script type="module" src="../../src/js/login.js"></script>
+<script type="module" src="../../src/js/utils.js"></script>

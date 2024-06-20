@@ -1,0 +1,145 @@
+:root {
+  --body: hsl(0, 0%, 7%);
+  --nav: #282626;
+  --button: #f12349;
+  --button-hover: #c81e3e;
+  --active-button: rgb(76, 60, 161);
+  --card-bg: #064a75;
+  --link-bg: white;
+  --qr-bg: #1b71aa;
+  --card-hover-bg: #123d79;
+  --form-bg: #1c1c1c;
+  --input-bg: #333;
+  --input-border: #444;
+  --input-focus: #555;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: auto 2fr;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body);
+  color: white;
+}
+nav {
+  display: flex;
+  background-color: var(--nav);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+.title,
+.description {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: white;
+}
+nav p {
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+.icon {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: max-content;
+  background-color: white;
+  padding: 10px;
+  right: -12px;
+  top: 40px;
+  transition: 250ms ease-in-out;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 100px;
+}
+.menu > * {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.hide {
+  display: none;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--form-bg);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  height: max-content;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+label {
+  font-size: 1em;
+}
+input[type="text"] {
+  padding: 10px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  color: white;
+}
+input[type="text"]:focus {
+  border-color: var(--input-focus);
+  outline: none;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+button.submit-btn {
+  padding: 10px;
+  background-color: var(--button);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+button.submit-btn:hover {
+  background-color: var(--button-hover);
+}
+.error {
+  color: red;
+}
+.valid {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: green;
+}
+.hidden {
+  display: none;
+}

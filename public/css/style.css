@@ -1,0 +1,140 @@
+:root {
+  --body: hsl(0, 0%, 7%);
+  --nav: #282626;
+  --button: #f12349;
+  --active-button: rgb(76, 60, 161);
+  --card-bg: #064a75;
+  --link-bg: white;
+  --qr-bg: #1b71aa;
+  --card-hover-bg: #123d79;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: auto 2fr;
+  gap: 40px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body);
+  color: white;
+}
+nav {
+  display: flex;
+  background-color: var(--nav);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+.title {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: white;
+}
+nav p {
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+.icon {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: max-content;
+  background-color: white;
+  padding: 10px;
+  right: -12px;
+  top: 40px;
+  transition: 250ms ease-in-out;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 100;
+}
+.menu > * {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.hide {
+  display: none;
+}
+section {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.videos {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(392px, 400px));
+  justify-content: space-around;
+  background: var(--nav);
+  padding-block: 10px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  width: 392px;
+  height: 280px;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: 500ms ease-in-out;
+}
+.video-card:hover {
+  background-color: #000;
+}
+.thumbnail {
+  display: flex;
+  height: 80%;
+}
+.video-div {
+  display: flex;
+  height: 80%;
+  position: relative;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#player {
+  width: 100%;
+  height: 100%;
+}
+.video-title {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 5px;
+  text-wrap: nowrap;
+}
+.video-views {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.view {
+  width: 30px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,117 @@
+:root {
+  --body: hsl(0, 0%, 7%);
+  --button: #064a75;
+  --active-button: rgb(76, 60, 161);
+  --form: #282626;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--body);
+  color: white;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+form {
+  display: grid;
+  grid: repeat(5, auto) / 1fr;
+  background-color: var(--form);
+
+  width: 400px;
+  height: max-content;
+  gap: 25px;
+  justify-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+form .email,
+form .password {
+  position: relative;
+  display: grid;
+  grid: auto / 110px auto;
+  position: relative;
+  align-items: center;
+}
+label {
+  font-size: 20px;
+}
+input[type="text"],
+input[type="password"] {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  height: 33px;
+  color: white;
+}
+form .email::after,
+form .password::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 110px);
+  height: 1px;
+  background-color: white;
+  bottom: 7px;
+  right: 0;
+}
+form .red-field::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 110px);
+  height: 1px;
+  background-color: red;
+  bottom: 8px;
+  right: 0;
+}
+input[type="text"],
+input[type="password"]:focus-within {
+  outline: none;
+}
+button {
+  font-size: 20px;
+  background-color: var(--button);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  color: white;
+  font-family: "Poetsen One", sans-serif;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.error {
+  position: absolute;
+  color: red;
+  left: 36%;
+  font-size: 12px;
+}
+.main-error {
+  color: red;
+  font-size: 16px;
+}
+.email-error {
+  bottom: calc(0% - 12px);
+}
+.password-error {
+  bottom: calc(0% - 12px);
+}
+.hide {
+  display: none;
+}

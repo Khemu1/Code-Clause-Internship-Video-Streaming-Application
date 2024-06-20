@@ -1,0 +1,89 @@
+:root {
+  --body: hsl(0, 0%, 7%);
+  --nav: #282626;
+  --button: #f12349;
+  --active-button: rgb(76, 60, 161);
+  --card-bg: #064a75;
+  --link-bg: white;
+  --qr-bg: #1b71aa;
+  --card-hover-bg: #123d79;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: auto 2fr;
+  gap: 40px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body);
+  color: white;
+}
+nav {
+  display: flex;
+  background-color: var(--nav);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+.title {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: white;
+}
+nav p {
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+.icon {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: max-content;
+  background-color: white;
+  padding: 10px;
+  right: -12px;
+  top: 40px;
+  transition: 250ms ease-in-out;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 100px;
+}
+.menu > * {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.hide {
+  display: none;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+section > * {
+  display: flex;
+  justify-content: center;
+}
+.message {
+  color: red;
+  font-size: 1.9em;
+}
+.hidden {
+  display: none;
+}

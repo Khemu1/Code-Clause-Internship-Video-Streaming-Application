@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/register.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/assets/images/favicon-32x32.png"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <form method="POST" class="register" enctype="multipart/form-data">
+        <h2>Register</h2>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+          <small class="error email-error hide"></small>
+        </div>
+        <div class="username">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" />
+          <small class="error username-error hide"></small>
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <small class="error password-error hide"></small>
+        </div>
+        <button type="submit">Register</button>
+        <small><a href="/api/pages/login">Already have an account ?</a></small>
+      </form>
+    </div>
+  </body>
+</html>
+<script type="module" src="../../src/js/register.js"></script>
+<script type="module" src="../../src/js/utils.js"></script>
