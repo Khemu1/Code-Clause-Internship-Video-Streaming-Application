@@ -13,7 +13,7 @@ This project is a video streaming application that allows users to upload, view,
 - **Private and Public Videos**: Set video visibility to public or private.
 ## Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript, [Plyr.js](https://plyr.io/),[FilePond](https://pqina.nl/filepond/)
+- **Frontend**: HTML, CSS, JavaScript, [Plyr.js](https://plyr.io/), [FilePond](https://pqina.nl/filepond/)
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Others**: Node-Cron, Vite
