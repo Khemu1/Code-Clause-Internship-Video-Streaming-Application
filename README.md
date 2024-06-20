@@ -55,26 +55,6 @@ This project is a video streaming application that allows users to upload, view,
 - **View Videos**: Browse the home page to see public videos. Private videos are only accessible to the uploader.
 - **Increment View Count**: The view count increases automatically when a video starts playing.
 
-## Folder Structure
-
-video-streaming-app/
-├── app/
-│ ├── controllers/
-│ ├── database/
-│ ├── models/
-│ ├── routes/
-│ └── utils/
-├── public/
-│ ├── assets/
-│ ├── pages/
-│ └── styles/
-├── src/
-├── .env
-├── .gitignore
-├── package.json
-├── server.js
-└── vite.config.js
-
 ## Clean Up Temporary Files
 
 The application includes a cron job to clean up temporary files every hour. The function `cleanUpTempFiles` in `utils.js` handles this task.
