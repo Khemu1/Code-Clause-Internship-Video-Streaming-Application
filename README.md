@@ -32,7 +32,7 @@ This project is a video streaming application that allows users to upload, view,
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/video-streaming-app.git
+    git clone https://github.com/Khemu1/Code-Clause-Internship-Video-Streaming-Application
     cd video-streaming-app
     ```
 
